@@ -3,3 +3,10 @@ kassensystem.iml
 kassensystem.ipr
 kassensystem.iws
 build
+.git
+.gradle
+.settings
+.classpath
+.project
+.vimrc
+.idea
