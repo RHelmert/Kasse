@@ -1,11 +1,11 @@
 package de.ostmarkbeuthen.kasse;
 
-import java.util.Currency;
-import java.util.Locale;
+import de.ostmarkbeuthen.kasse.database.Database;
+import dagger.Inject;
 
 class Main {
+	@Inject Database d;
 	static void main(String[] argv) {
-		Currency c = Currency.getInstance(Locale.GERMANY);
-		
+		new Main();
 	}
 }
