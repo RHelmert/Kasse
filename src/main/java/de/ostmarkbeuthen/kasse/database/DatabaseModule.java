@@ -2,12 +2,12 @@ package de.ostmarkbeuthen.kasse.database;
 
 import dagger.Module;
 import dagger.Provides;
-import dagger.Singleton;
+import javax.inject.Singleton;
 
 @Module(
 	library=true)
 public class DatabaseModule {
-	@Provides @Singleton Database providDatabase() {
-		return new Database();
+	@Provides @Singleton Database provideDatabase() {
+		return new DummyDatabase();
 	}
 }

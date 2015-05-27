@@ -1,10 +1,12 @@
 package de.ostmarkbeuthen.kasse;
 
 import de.ostmarkbeuthen.kasse.database.Database;
-import dagger.Inject;
+
+import javax.inject.Inject;
 
 class Main {
-	@Inject Database d;
+	@Inject
+	Database d;
 	static void main(String[] argv) {
 		new Main();
 	}

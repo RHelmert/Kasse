@@ -5,10 +5,10 @@ import java.time.LocalDate;
 
 public interface Database {
 	User getUser(String name);
-	List<? extends User> getUsers();
+	DatabaseResult<User> getUsers();
 
 	Product getProduct(String barcode);
-	List<? extends Product> getProducts();
+    DatabaseResult<Product> getProducts();
 
 	Event getDefaultEvent();
 	Event getCurrentEvent();
