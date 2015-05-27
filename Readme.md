@@ -11,9 +11,27 @@ Das Kassensystem  benutzt [gradle](https://gradle.org/) als build-system.
 Projektdateien für eclipse werden mit `./gradlew eclipse` erstellt.
 (`gradlew.bat` für windows)
 
+Posix:
+
+```sh
+./gradlew idea
+```
+
+Windows CMD:
+
+```bat
+gradlew.bat idea
+```
+
 ###idea
 
-Projektdateien für eclipse werden mit `./gradlew idea` erstellt.
-(`gradlew.bat` für windows)
+## Projekt compilieren
 
-*notiz: funktioniert auf meinem PC noch nicht*
+IDEs können das Projekt nativ kompilieren.
+Ohne IDE wird das Projekt mit
+
+```
+./gradlew build
+```
+
+ausgeführt.
