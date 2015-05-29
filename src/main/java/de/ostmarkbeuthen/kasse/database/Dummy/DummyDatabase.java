@@ -1,8 +1,10 @@
-package de.ostmarkbeuthen.kasse.database;
+package de.ostmarkbeuthen.kasse.database.Dummy;
+
+import de.ostmarkbeuthen.kasse.database.*;
 
 import java.time.LocalDate;
 
-class DummyDatabase implements Database {
+public class DummyDatabase implements Database {
     @Override
     public User getUser(String name) {
         return null;

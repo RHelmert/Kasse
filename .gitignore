@@ -10,3 +10,5 @@ build
 .project
 .vimrc
 .idea
+out
+*~
