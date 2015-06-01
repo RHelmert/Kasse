@@ -14,6 +14,11 @@ public class DummyDatabase implements Database {
         return null;
     }
 
+		@Override
+		public Product newProduct() {
+			return null;
+		}
+
     @Override
     public Product getProduct(String barcode) {
         return null;
@@ -22,6 +27,11 @@ public class DummyDatabase implements Database {
     public DatabaseResult<Product> getProducts() {
         return null;
     }
+
+		@Override
+		public Event newEvent() {
+			return null;
+		}
 
     @Override
     public Event getDefaultEvent() {

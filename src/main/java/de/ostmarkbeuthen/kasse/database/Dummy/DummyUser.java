@@ -20,7 +20,7 @@ public class DummyUser implements User {
     @Override
     public AuthUser auth(String s) {
         if (s.equals(password)) {
-            return new DummyAuthUser();
+            return new DummyAuthUser(this);
         } else {
             return null;
         }
