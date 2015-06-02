@@ -1,6 +1,6 @@
 package de.ostmarkbeuthen.kasse.hardware.nfc;
 
-interface NFCEventListener {
+public interface NFCEventListener {
 	void contactAchieved(NFCEvent event);
 	void contactLost(NFCEvent event);
 }

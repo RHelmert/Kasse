@@ -1,5 +1,7 @@
 package de.ostmarkbeuthen.kasse.hardware.nfc;
 
-interface NFCEvent {
+import java.util.EventObject;
 
+
+public class NFCEvent {
 }

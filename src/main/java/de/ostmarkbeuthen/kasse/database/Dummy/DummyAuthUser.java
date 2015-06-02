@@ -26,8 +26,12 @@ public class DummyAuthUser implements AuthUser {
 
     @Override
     public AuthUser auth(String s) {
-        return null;
+        return this;
     }
+
+		public AuthUser auth(AuthUser authority) {
+			return this;
+		}
 
     @Override
     public String getName() {
